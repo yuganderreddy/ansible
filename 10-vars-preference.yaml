@@ -1,9 +1,9 @@
 - name: variables to print
   hosts: web
-  vars:
-    COURSE: "DevOps with AWS from PLAY level"
-    DURATION: "120 Hrs"
-    TRAINER: "Sivakumar Reddy"
+  # vars:
+  #   COURSE: "DevOps with AWS from PLAY level"
+  #   DURATION: "120 Hrs"
+  #   TRAINER: "Sivakumar Reddy"
   # vars_files:
   # - vars.yaml
   # vars_prompt:
@@ -29,5 +29,5 @@
 #2nd preference is TASK level
 #3rd preference is Files
 #4th preference is prompt level
-#5th preference is
+#5th preference is PLAY level
 #6th preference is
