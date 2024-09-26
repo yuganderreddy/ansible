@@ -1,3 +1,4 @@
+    # if we maintain seperate file for vars like this, then accidental changes to other code chances are very less.
     COURSE: "DevOps with AWS"
     DURATION: "150 Hrs"
     TRAINER: "Sivakumar Reddy M"
