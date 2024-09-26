@@ -1,0 +1,7 @@
+- name: nginx install and run
+  hosts: web
+  tasks:
+  - name: Installing nginx
+    ansible.builtin.package: # it is Heterogeneous module that work for all distros
+      name: nginx
+      state: present
