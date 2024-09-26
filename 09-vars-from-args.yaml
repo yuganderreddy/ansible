@@ -3,4 +3,4 @@
   tasks:
   - name: print the information
     ansible.builtin.debug:
-      msg: "Hi {{NAME}}, Good {{GREETING}}" #here vars are defined but values to vars are defined from args i.e; from outside
+      msg: "Hello {{NAME}}, Good {{GREETING}}" #here vars are defined but values to vars are defined from args i.e; from outside
