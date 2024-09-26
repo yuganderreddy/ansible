@@ -22,3 +22,10 @@
       TRAINER: "Sivakumar Reddy"
     ansible.builtin.debug:
       msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+
+#1st preference is always command line/args
+#2nd preference is TASK level
+#3rd preference is
+#4th preference is
+#5th preference is
+#6th preference is
