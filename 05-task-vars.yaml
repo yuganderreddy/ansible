@@ -1,0 +1,20 @@
+- name: variables to print
+  hosts: web
+  vars: #this is play level vars, all tasks in this play have access to this.
+    COURSE: "DevOps with AWS"
+    DURATION: "120 Hrs"
+    TRAINER: "Sivakumar Reddy"
+  tasks:
+  - name: print the information
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+
+  - name: print the information again
+    vars: # this is task level vars
+      COURSE: "Ansible"
+    ansible.builtin.debug:
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+
+  - name: print the information again and again
+    ansible.builtin.debug: #here 'COURSE' variable value is "DevOps with AWS" only because that is play level var, this is INHERITANCE.
+      msg: "Hi, I am learning {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
