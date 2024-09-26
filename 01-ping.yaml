@@ -1,4 +1,4 @@
-- name: ping the server
+- name: ping the server  #name of the play
   hosts: web  #which hosts your anisble wants to connect with.
   tasks: #list of tasks/modules/collections
   - name: ping the server
