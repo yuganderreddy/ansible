@@ -1,5 +1,6 @@
 - name: nginx install and run
   hosts: web
+  become: yes #take sudo access
   tasks:
   - name: Installing nginx
     ansible.builtin.package: # it is Heterogeneous module that work for all distros
