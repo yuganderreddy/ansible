@@ -9,9 +9,9 @@
   - name: print this if less than 10
     ansible.builtin.debug:
       msg: "given number {{number}} is less than 10"
-    when: number |int < 10 #conditional expression # variable number not needed in flower braces
+    when: number |int < 10 #conditional expression # variable number not needed in flower braces ### here '| int' is used because by default given values in prompt will be considered as 'string' only.
 
   - name: print this if greater than or equal to 10
     ansible.builtin.debug:
       msg: "given number {{number}} is greater than or equal to 10"
-    when: number |int> 10 # variable number not needed in flower braces
+    when: number |int>= 10 # variable number not needed in flower braces # here '| int' is used because by default given values in prompt will be considered as 'string' only.
