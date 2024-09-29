@@ -1,4 +1,5 @@
 - name: install nginx
+  become: yes
   hosts: web
   tasks:
   - name: print the stats
