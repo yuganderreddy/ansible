@@ -1,0 +1,5 @@
+- name: filters demo
+  hosts: local
+  connection: local
+  tasks:
+    - name: 
