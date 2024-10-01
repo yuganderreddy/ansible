@@ -17,3 +17,9 @@
         greeting: "Hello Ramesh"
       ansible.builtin.debug:
         msg: "{{ greeting | lower }}"
+
+      - name: to get unique values
+      vars:
+        list: [1,2,3,4,1,2,5,6,7]
+      ansible.builtin.debug:
+        msg: "{{ list | unique }}"
