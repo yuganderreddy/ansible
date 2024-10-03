@@ -3,4 +3,5 @@
   connection: local
   tasks:
     - name: execute the command
-        msg: ls -ltr > /tmp/output.txt
+      ansible.builtin.debug:
+        msg: "ls -ltr > /tmp/output.txt"
