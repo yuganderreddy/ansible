@@ -45,7 +45,7 @@
       amazon.aws.route53:
         state: present
         zone: "{{zone}}"
-        record: "{{item.item}}.{{zone}}"  # frontend.yuganderreddym.online
+        record: "{{zone}}"  # yuganderreddym.online
         type: A
         ttl: 1
         value: "{{item.instances[0].public_ip_address}}"
