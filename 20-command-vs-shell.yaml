@@ -7,9 +7,9 @@
                                                        # 'Command module' just issues the command.
                                                        # Compared to both, 'Command module' is secured.
     
-    # - name: check the process
-    #   ansible.builtin.command: ps -ef | grep ssh
-    #   register: output
+    - name: check the process
+      ansible.builtin.command: ps -ef | grep ssh
+      register: output
 
     - name: check the process
       ansible.builtin.shell: ps -ef | grep ssh
