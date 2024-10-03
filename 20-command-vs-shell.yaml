@@ -3,4 +3,4 @@
   connection: local
   tasks:
     - name: execute the command
-        msg: "ls -ltr > /tmp/output.txt"
+        msg: ls -ltr > /tmp/output.txt
