@@ -4,4 +4,4 @@
   tasks:
     - name: execute the command
       ansible.builtin.debug:
-        msg: "ls -ltr > /tmp/output.txt"
+        msg: ls -ltr > /tmp/output.txt
