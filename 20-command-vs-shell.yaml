@@ -2,4 +2,4 @@
   hosts: local
   connection: local
   tasks:
-    msg: "ls -ltr > /tmp/output.txt"
+    msg: ls -ltr > /tmp/output.txt
