@@ -18,7 +18,7 @@
         - boto3 
         - botocore
         executable: pip3.9
-        
+
     - name: create ec2 instance
       amazon.aws.ec2_instance:
         name: "{{item}}"
@@ -26,7 +26,6 @@
         instance_type: "{{instance_type}}"
         security_group: "{{sg}}"
         image_id: "{{ami_id}}"
-
       loop: "{{instances}}"
       register: ec2_instances
 
